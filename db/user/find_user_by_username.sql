@@ -1,1 +1,1 @@
-select * from helo_users where username = username;
+select * from helo_users where lower(username) = lower(${username});

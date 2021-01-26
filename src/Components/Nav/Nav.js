@@ -31,11 +31,11 @@ class Nav extends Component {
   }
 
   render() {
-    console.log(this.props)
+    // console.log(this.props)
     return this.props.location.pathname !== '/' &&
       <div className='nav'>
         <div className='nav-profile-container'>
-          <div className='nav-profile-pic' style={{ backgroundImage: `url(${this.props.reducer?.profile_pic})` }}></div>
+          <div className='nav-profile-pic' style={{ backgroundImage: `url(${this.props.reducer?.profilePic})` }}></div>
           <p>{this.props.reducer?.username}</p>
         </div>
         <div className='nav-links'>
